@@ -10,8 +10,10 @@
         <image src="{{item.banner}}"></image>
       </view>
       <view class="cate-title">
-                    <text>{{item.cate}}</text>
-                </view>
+        <text>{{item.cate}}</text>
+      </view>
+      <view class="product"></view>
+
 
     </block>>
   </scroll-view>
