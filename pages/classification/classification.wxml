@@ -33,7 +33,7 @@
   <view class="product">
     <view class="product-list">
       <navigator url="../details1/details1">
-      
+        <image src="/imgs/c1.png"></image>
       
       
       
