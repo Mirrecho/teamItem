@@ -2,7 +2,7 @@
     <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
         <block wx:for="{{imgUrls}}" wx:key="{{index}}">
             <swiper-item>
-                <image src="{{item}}" class="slide-image" width="100%" />
+                <image src="{{item}}" class="slide-image" width="100%"/>
             </swiper-item>
         </block>
     </swiper>
@@ -59,7 +59,6 @@
                 </navigator>
             </view>
             <view class="newest-list">
-
                 <navigator url="../details2/details2">
                     <image src="/imgs/s4.png"></image>
                     <view class="newest-text"><text>草莓蛋糕 7寸</text></view>
@@ -86,10 +85,21 @@
                     <view class="newest-text"><text>草莓蛋糕 7寸</text></view>
                     <view class="newest-text"><text>￥ 99</text></view>
                 </navigator>
-            
-            
+            </view>
+            <view class="newest-list">
+                <navigator url="../details2/details2">
+                    <image src="/imgs/s5.png"></image>
+                    <view class="newest-text"><text>草莓糕点 100g</text></view>
+                    <view class="newest-text"><text>￥ 9.9</text></view>
+                </navigator>
+            </view>
+            <view class="newest-list">
+                <navigator url="../details2/details2">
+                    <image src="/imgs/s6.png"></image>
+                    <view class="newest-text"><text>水果捞 100g</text></view>
+                    <view class="newest-text"><text>￥ 9.9</text></view>
+                </navigator>
             </view>
         </view>
-
     </view>
 </view>
