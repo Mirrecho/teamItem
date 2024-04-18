@@ -66,6 +66,16 @@
                     <view class="newest-text"><text>￥ 99</text></view>
                 </navigator>
             </view>
+            <view class="newest-list">
+                <navigator url="../details2/details2">
+                    <image src="/imgs/s5.png"></image>
+                    <view class="newest-text"><text>草莓糕点 100g</text></view>
+                    <view class="newest-text"><text>￥ 19</text></view>
+                </navigator>
+            
+            
+            
+            </view>
         </view>
 
     </view>
