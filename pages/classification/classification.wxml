@@ -34,16 +34,16 @@
     <view class="product-list">
       <navigator url="../details1/details1">
         <image src="/imgs/c1.png"></image>
-      
-      
-      
+        <view class="classname"><text>奶油蛋糕 500g</text></view>
+
+
       </navigator>>
-    
-    
-    
+
+
+
     </view>
-  
-  
+
+
   </view>
 
 
