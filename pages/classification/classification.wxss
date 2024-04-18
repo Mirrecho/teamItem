@@ -54,8 +54,30 @@ page,
   color: #AB956D;
   font-size: 28rpx;
 }
+.cate-title::before{
+  position: absolute;
+  left: 130rpx;
+  top: 43rpx;
+  content: '';
+  width: 70rpx;
+  height: 4rpx;
+  background: #AB956D;
+}
+.cate-title::after{
+  position: absolute;
+  right: 130rpx;
+  top: 43rpx;
+  content: '';
+  width: 70rpx;
+  height: 4rpx;
+  background: #AB956D;
+}
 
-.categroy-left .cate-list.on {
-  color: #AB956D;
-  border-color: #AB956D;
+.product-list{
+  display: inline-block;
+  width: 160rpx;
+  height: 160rpx;
+  text-align: center;
+  margin:0 20rpx 20rpx 0;
+  font-size: 24rpx;
 }
