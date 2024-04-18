@@ -57,13 +57,16 @@
                     <view class="newest-text"><text>水果捞 100g</text></view>
                     <view class="newest-text"><text>￥ 9.9</text></view>
                 </navigator>
-            
-            
-            
-            
             </view>
-        
+            <view class="newest-list">
+
+                <navigator url="../details2/details2">
+                    <image src="/imgs/s4.png"></image>
+                    <view class="newest-text"><text>草莓蛋糕 7寸</text></view>
+                    <view class="newest-text"><text>￥ 99</text></view>
+                </navigator>
+            </view>
         </view>
-    
+
     </view>
 </view>
