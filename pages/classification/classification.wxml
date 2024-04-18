@@ -17,6 +17,9 @@
       </view>
       <navigator url="../list/list"></navigator>
       <image src="{{val.thumb}}"></image>
+      <view class="classname"><text>{{val.name}}</text></view>
+
+
     </block>>
   </scroll-view>
 
