@@ -23,7 +23,7 @@
 </view>
 </view>
 </block>>
-
+<view id="dangao" class="cate-box"></view>
 
 </scroll-view>
 
