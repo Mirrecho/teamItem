@@ -1,87 +1,63 @@
 <view class="main">
   <view class="categroy-left">
     <view wx:for="{{category}}" wx:key="index" data-id="{{item.id}}" data-index="{{index}}" bindtap="switchTab" class="cate-list {{curIndex === index?'on':''}}">{{item.name}}</view>
-
   </view>
+
   <scroll-view class="categroy-right" scroll-y="{{isScroll}}" scroll-into-view="{{toView}}" scroll-with-animation="true">
     <block wx:for="{{detail}}" wx:for-index wx:key="idx">
-      <view id="{{item.id}}" class="cate-box"></view>
-      <view class="cate-banner">
-        <image src="{{item.banner}}"></image>
+      <view id="{{item.id}}" class="cate-box">
+        <view class="cate-banner">
+          <image src="{{item.banner}}"></image>
+        </view>
+        <view class="cate-title">
+          <text>{{item.cate}}</text>
+        </view>
+        <view class="product">
+          <view class="product-list" wx:for="{{item.detail}}" wx:key="index" wx:for-item="val">
+            <navigator url="../list/list">
+              <image src="{{val.thumb}}"></image>
+              <view class="classname"><text>{{val.name}}</text></view>
+            </navigator>
+          </view>
+        </view>
       </view>
-      <view class="cate-title">
-        <text>{{item.cate}}</text>
+    </block>
+    <block>
+      <view id="dangao" class="cate-box">
+        <view class="cate-banner">
+          <image src="/imgs/classification01.jpg"></image>
+        </view>
+        <view class="cate-title">
+          <text>蛋糕</text>
+        </view>
+        <view class="product">
+          <view class="product-list">
+            <navigator url="../details1/details1">
+              <image src="/imgs/c1.png"></image>
+              <view class="classname"><text>奶油蛋糕 500g</text></view>
+            </navigator>
+          </view>
+        </view>
       </view>
-      <view class="product"></view>
-      <view class="product-list" wx:for="{{item.detail}}" wx:key="index" wx:for-item="val">
+    </block>
+    <block>
+      <view id="gaodian" class="cate-box">
+        <view class="cate-banner">
+          <image src="/imgs/classification01.jpg"></image>
+        </view>
+        <view class="cate-title">
+          <text>糕点</text>
+        </view>
+        <view class="product">
+          <view class="product-list">
+            <navigator url="../details1/details1">
+              <image src="/imgs/c1.png"></image>
+              <view class="classname"><text>奶油蛋糕 500g</text></view>
+            </navigator>
+          </view>
+        </view>
       </view>
-      <navigator url="../list/list"></navigator>
-      <image src="{{val.thumb}}"></image>
-      <view class="classname"><text>{{val.name}}</text></view>
-      </navigator>
-</view>
-</view>
-</view>
-</block>>
-<view id="dangao" class="cate-box">
-  <view class="cate-banner">
-    <image src="/imgs/classification01.jpg"></image>
-  </view>
-  <view class="cate-title">
-    <text>蛋糕</text>
-  </view>
-  <view class="product">
-    <view class="product-list">
-      <navigator url="../details1/details1">
-        <image src="/imgs/c1.png"></image>
-        <view class="classname"><text>奶油蛋糕 500g</text></view>
-      </navigator>>
-    </view>
-  </view>
-</view>
-</block>
-<block>
-  <view id="gaodian" class="cate-box">
-    <view class="cate-banner">
-      <image src="/imgs/classification01.jpg"></image>
-    </view>
-    <view class="cate-title">
-      <text>糕点</text>
-    </view>
-    <view class="product">
-      <view class="product-list">
-        <navigator url="../details1/details1">
-        </navigator>
-        <image src="/imgs/c1.png"></image>
-
-
-      </view>
-
-
-
-    </view>
-
-
-</block>
-
-
-
-</block>
-</view>
-
-
-
-
-
-
-
-
-
-</view>
-
-</scroll-view>
-
-
-
+    </block>
+  </scroll-view>
 
 </view>
