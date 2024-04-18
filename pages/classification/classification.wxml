@@ -13,7 +13,8 @@
         <text>{{item.cate}}</text>
       </view>
       <view class="product"></view>
-
+      <view class="product-list" wx:for="{{item.detail}}" wx:key="index" wx:for-item="val">
+      </view>
 
     </block>>
   </scroll-view>
