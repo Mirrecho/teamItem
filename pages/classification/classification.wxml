@@ -27,6 +27,9 @@
   <view class="cate-banner">
     <image src="/imgs/classification01.jpg"></image>
   </view>
+  <view class="cate-title">
+    <text>蛋糕</text>
+  </view>
 
 
 
