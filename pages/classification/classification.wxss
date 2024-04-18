@@ -24,3 +24,38 @@ page,
   color: #AB956D;
   border-color: #AB956D;
 }
+
+.categroy-right {
+  float: right;
+  width: 600rpx;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+.cate-box {
+  height: 100%;
+  padding: 40rpx;
+  box-sizing: border-box;
+}
+
+.cate-box .cate-banner image {
+  display: block;
+  width: 100%;
+  height: 190rpx;
+}
+
+.cate-title {
+  position: relative;
+  height: 30rpx;
+  line-height: 30rpx;
+  padding: 30rpx 0 55rpx;
+  text-align: center;
+  color: #AB956D;
+  font-size: 28rpx;
+}
+
+.categroy-left .cate-list.on {
+  color: #AB956D;
+  border-color: #AB956D;
+}
