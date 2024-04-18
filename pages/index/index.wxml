@@ -38,7 +38,11 @@
         <view class="newest-title"><text>最近新品</text></view>
         <view class="newest-box">
             <view class="newest-list">
-            
+                <navigator url="../details2/details2">
+                    <image src="/imgs/s4.png"></image>
+                    <view class="newest-text"><text>草莓蛋糕 7寸</text></view>
+                    <view class="newest-text"><text>￥ 99</text></view>
+                </navigator>
             
             </view>
         
