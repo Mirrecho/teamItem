@@ -42,7 +42,9 @@
 </block>
 <block>
   <view id="gaodian" class="cate-box">
-
+    <view class="cate-banner">
+      <image src="/imgs/classification01.jpg"></image>
+    </view>
 
 
 
