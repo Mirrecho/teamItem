@@ -26,10 +26,14 @@
                 <navigator url="../details1/details1">
                     <image src="/imgs/index_02.png"></image>
                 </navigator>
-
             </view>
-
-
+        </view>
+        <view class="select-bottom">
+            <navigator url="../details1/details1">
+                <image src="/imgs/index_03.jpg"></image>
+            </navigator>
+        
+        
         </view>
     </view>
 </view>
