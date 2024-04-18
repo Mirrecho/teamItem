@@ -45,6 +45,9 @@
     <view class="cate-banner">
       <image src="/imgs/classification01.jpg"></image>
     </view>
+    <view class="cate-title">
+      <text>糕点</text>
+    </view>
 
 
 
