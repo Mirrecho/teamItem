@@ -14,5 +14,8 @@
             </view>
         </navigator>
     </view>
-
+    <view class="selected">
+        <view class="select-title"><text>甜点分类</text></view>
+    
+    </view>
 </view>
