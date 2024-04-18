@@ -16,7 +16,7 @@
       <view class="product-list" wx:for="{{item.detail}}" wx:key="index" wx:for-item="val">
       </view>
       <navigator url="../list/list"></navigator>
-
+      <image src="{{val.thumb}}"></image>
     </block>>
   </scroll-view>
 
