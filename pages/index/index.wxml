@@ -32,8 +32,11 @@
             <navigator url="../details1/details1">
                 <image src="/imgs/index_03.jpg"></image>
             </navigator>
-        
-        
         </view>
+    </view>
+    <view class="newest">
+        <view class="newest-title"><text>最近新品</text></view>
+
+    
     </view>
 </view>
