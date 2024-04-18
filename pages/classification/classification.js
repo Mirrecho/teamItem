@@ -1,66 +1,47 @@
-// pages/classification/classification.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+      category: [
+          {name:'蛋糕',id:'dangao'},
+          {name:'糕点',id:'gaodian'},
+          {name:'冷饮',id:'lengyin'},
+          {name:'热饮',id:'reyin'},
+          {name:'甜品',id:'tianpin'},
+          {name:'水果',id:'shuiguo'}
+      ],
+      detail:[],
+      curIndex: 0,
+      isScroll: false,
+      toView: 'dangao'
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
+  onReady(){
+      var self = this;
+      wx.request({
+          url:'http://www.gdfengshuo.com/api/wx/cate-detail.txt',
+          success(res){
+              self.setData({
+                  detail : res.data
+              })
+          }
+      });
+      
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
+  switchTab(e){
+    const self = this;
+    this.setData({
+      isScroll: true
+    })
+    setTimeout(function(){
+      self.setData({
+        toView: e.target.dataset.id,
+        curIndex: e.target.dataset.index
+      })
+    },0)
+    setTimeout(function () {
+      self.setData({
+        isScroll: false
+      })
+    },1)
+      
   }
+  
 })
