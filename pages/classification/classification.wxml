@@ -9,7 +9,9 @@
       <view class="cate-banner">
         <image src="{{item.banner}}"></image>
       </view>
-
+      <view class="cate-title">
+                    <text>{{item.cate}}</text>
+                </view>
 
     </block>>
   </scroll-view>
