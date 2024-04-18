@@ -36,7 +36,15 @@
     </view>
     <view class="newest">
         <view class="newest-title"><text>最近新品</text></view>
-
+        <view class="newest-box">
+            <view class="newest-list">
+            
+            
+            </view>
+        
+        
+        
+        </view>
     
     </view>
 </view>
