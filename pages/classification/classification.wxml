@@ -31,7 +31,17 @@
     <text>蛋糕</text>
   </view>
   <view class="product">
-  
+    <view class="product-list">
+      <navigator url="../details1/details1">
+      
+      
+      
+      
+      </navigator>>
+    
+    
+    
+    </view>
   
   
   </view>
