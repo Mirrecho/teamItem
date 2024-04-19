@@ -1,2 +1,6 @@
-<!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
+<view class="main">
+    <view class="search-box">
+        <input class="search-input" placeholder="搜索" value="{{value}}" bindinput="searchInput" />
+        <icon class="weui-icon-search_in-box search-icon" type="search" size="14"></icon>
+        <text class="search-btn" wx:if="{{showResult}}" bindtap="cancelSearch">取消</text>
+    </view>
