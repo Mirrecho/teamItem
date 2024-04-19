@@ -16,3 +16,11 @@
   text-align: center;
   background: #f5f6f5;
 }
+.newest-list:nth-child(2n){
+  margin-right: 0;
+}
+.newest-list image{
+  width: 180rpx;
+  height: 180rpx;
+  margin: 30rpx 0 20rpx;
+}
