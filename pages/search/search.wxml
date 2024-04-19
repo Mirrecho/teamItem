@@ -4,3 +4,23 @@
         <icon class="weui-icon-search_in-box search-icon" type="search" size="14"></icon>
         <text class="search-btn" wx:if="{{showResult}}" bindtap="cancelSearch">取消</text>
     </view>
+	<view class="result" wx:if="{{showResult}}">
+		<view class="result-box" wx:if="{{result.length > 0}}">
+            <view class="result-list" wx:for="{{result}}" wx:key="index">
+                <navigator url="{{item.url}}">
+                    <image src="{{item.thumb}}"></image>
+                    <view class="result-text">
+                        <text>{{item.title}}</text>
+                    </view>
+                    <view class="result-text">
+                        <text>￥ {{item.price}}</text>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+	
+	
+	
+	
+	
+	</view>
