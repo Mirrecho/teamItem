@@ -7,6 +7,7 @@
       <navigator url="../details2/details2">
         <image src="/imgs/s4.png"></image>
         <view class="newest-text"><text>草莓蛋糕 7村</text></view>
+        <view class="newest-text"><text>￥ 99</text></view>
       </navigator>
 
 
