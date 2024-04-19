@@ -11,7 +11,11 @@
       </navigator>
     </view>
     <view class="newest-list">
-    
+      <navigator url="../details2/details2">
+      
+      
+      
+      </navigator>
     
     </view>
 
