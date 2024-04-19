@@ -104,3 +104,26 @@
   width: 80rpx;
   margin-right: 30rpx;
 }
+.goods-to-cart{
+  width: 210rpx;
+  padding-right: 75rpx;
+}
+.goods-cart-img{
+  position: absolute;
+  right: 50rpx;
+  top: 28rpx;
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.goods-stock{
+  font-size: 28rpx;
+  margin-bottom: 20rpx;
+}
+.goods-title{
+  font-size: 40rpx;
+  margin-bottom: 30rpx;
+}
+.goods-price{
+  font-size: 40rpx;
+}
