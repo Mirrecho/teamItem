@@ -51,4 +51,10 @@ Page({
       }, 200)
     }, 300)
   },
+  bindTap(e) {
+    const index = parseInt(e.currentTarget.dataset.index);
+    this.setData({
+      curIndex: index
+    })
+  }
 })
