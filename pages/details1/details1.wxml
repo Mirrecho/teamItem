@@ -5,6 +5,7 @@
   <view class="list-box">
     <view class="newest-list">
       <navigator url="../details2/details2">
+        <image src="/imgs/s4.png"></image>
         
                      </navigator>
     
