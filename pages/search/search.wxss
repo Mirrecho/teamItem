@@ -26,3 +26,28 @@ import '../../components/pageStyle.wxss';
     width: 35rpx;
     height: 35rpx;
 }
+.search-btn{
+    font-size: 32rpx;
+    padding: 0 20rpx;
+    line-height: 64rpx;
+}
+.title{
+    font-size: 32rpx;
+    margin: 30rpx 0;
+}
+.title text{
+    padding-right: 30rpx;
+    padding-bottom: 10rpx;
+    color: #AB956D;
+    border-bottom: 8rpx solid #AB956D;
+}
+.tags text{
+    display: inline-block;
+    font-size: 28rpx;
+    padding: 6rpx 20rpx;
+    border: 2rpx solid #ddd;
+    color: #aaa;
+    margin: 0 30rpx 20rpx 0;
+    border-radius: 40rpx;
+    word-break: break-all;
+}
