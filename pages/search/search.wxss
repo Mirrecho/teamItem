@@ -51,3 +51,35 @@ import '../../components/pageStyle.wxss';
     border-radius: 40rpx;
     word-break: break-all;
 }
+.keywords{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 90rpx;
+    background: #fff;
+    z-index: 9;
+    padding: 20rpx;
+    box-sizing: border-box;
+}
+.keywords-item{
+    line-height: 70rpx;
+    border-bottom: 1px solid #eee;
+    color: #787878;
+    font-size: 28rpx;
+}
+.result{
+    margin-top: 40rpx;
+}
+
+.result-box, .recommend-box{
+    padding:0 20rpx;
+}
+.result-list{
+    display: inline-block;
+    width: 325rpx;
+    height: 325rpx;
+    margin:0 20rpx 20rpx 0;
+    border-radius: 10px;
+    text-align: center;
+    background: #f5f6f5;
+}
