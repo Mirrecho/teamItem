@@ -1,10 +1,5 @@
-// pages/details2/details2.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
+  data:{
     goods: {
       id: 1,
       image: '/imgs/c1.png',
@@ -22,6 +17,7 @@ Page({
     show: false,
     scaleCart: false
   },
+
   addCount() {
     let num = this.data.num;
     num++;
@@ -29,6 +25,7 @@ Page({
       num : num
     })
   },
+
   addToCart() {
     const self = this;
     const num = this.data.num;
@@ -50,11 +47,14 @@ Page({
         })
       }, 200)
     }, 300)
+
   },
+
   bindTap(e) {
     const index = parseInt(e.currentTarget.dataset.index);
     this.setData({
       curIndex: index
     })
   }
+ 
 })
