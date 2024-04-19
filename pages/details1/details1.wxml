@@ -19,7 +19,8 @@
     </view>
     <view class="newest-list">
       <navigator url="../details2/details2">
-      
+        <image src="/imgs/s6.png"></image>
+
       
       
       </navigator>
