@@ -29,4 +29,26 @@ Page({
       num : num
     })
   },
+  addToCart() {
+    const self = this;
+    const num = this.data.num;
+    let total = this.data.totalNum;
+
+    self.setData({
+      show: true
+    })
+    setTimeout( function() {
+      self.setData({
+        show: false,
+        scaleCart : true
+      })
+      setTimeout( function() {
+        self.setData({
+          scaleCart: false,
+          hasCarts : true,
+          totalNum: num + total
+        })
+      }, 200)
+    }, 300)
+  },
 })
