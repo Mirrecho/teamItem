@@ -1,1 +1,6 @@
-/* pages/details1/details1.wxss */
+@import '../../components/pageStyle.wxss';
+
+.banner image{
+    width: 100%;
+    height: 400rpx;
+}
