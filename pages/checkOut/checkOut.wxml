@@ -9,6 +9,10 @@
         </view>
         <view wx:else class="orders-no-address">添加收货地址</view>
     </navigator>
-
+	<view class="orders-box">
+	
+	
+	
+	</view>
 
 </view>
