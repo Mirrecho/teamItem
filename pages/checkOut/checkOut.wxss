@@ -45,3 +45,32 @@
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+.orders-box{
+    padding-bottom: 105rpx;
+}
+.orders-list{
+    position: relative;
+    padding:20rpx 20rpx 20rpx 220rpx;
+    height: 180rpx;
+    border-bottom: 1rpx solid #ededed;
+}
+.orders-thumb{
+    position: absolute;
+    top: 20rpx;
+    left: 20rpx;
+    width: 180rpx;
+    height: 180rpx;
+}
+.orders-list view{
+    line-height: 60rpx;
+}
+
+.orders-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 95rpx;
+    line-height: 95rpx;
+    border-top: 1rpx solid #ededed;
+}
