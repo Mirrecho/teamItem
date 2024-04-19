@@ -1,1 +1,8 @@
-/* pages/details2/details2.wxss */
+@import '../../components/pageStyle.wxss';
+.goods-box{
+  position: relative;
+  padding: 40rpx 45rpx;
+  text-align: center;
+  color: #454552;
+  border-bottom: 30rpx solid #ededed;
+}

@@ -1,2 +1,5 @@
-<!--pages/details2/details2.wxml-->
-<text>pages/details2/details2.wxml</text>
+<view class="main">
+    <view class="goods-box">
+        <image src="{{goods.image}}" class="goods-thumb"></image>
+    </view>
+</view>

@@ -5,7 +5,22 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    goods: {
+      id: 1,
+      image: '/imgs/c1.png',
+      title: '奶油蛋糕',
+      price: 66.6,
+      stock: '有货',
+      detail: '这里是奶油蛋糕详情。',
+      parameter: '500g/个',
+      service: '不支持退货'
+    },
+    num: 1,
+    totalNum: 0,
+    hasCarts: false,
+    curIndex: 0,
+    show: false,
+    scaleCart: false
   },
 
   /**
