@@ -11,7 +11,7 @@
     </navigator>
 	<view class="orders-box">
 		<view wx:for="{{orders}}" wx:key="index" class="orders-list">
-		
+			<image class="orders-thumb" src="{{item.image}}"></image>
 		
 		
 		</view>
