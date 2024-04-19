@@ -141,3 +141,6 @@
   color: #bcaa8a;
   border-bottom: 5rpx solid #bcaa8a;
 }
+.goods-content{
+  padding: 40rpx;
+}
