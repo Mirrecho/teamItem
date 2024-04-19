@@ -56,5 +56,4 @@ Page({
       curIndex: index
     })
   }
- 
 })
