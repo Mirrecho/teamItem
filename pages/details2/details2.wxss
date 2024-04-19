@@ -32,10 +32,6 @@
     top: 530rpx;
     -webkit-transform: scale(4);
   }
-
-  /*60%{
-        top: 20rpx;
-    }*/
 }
 
 @keyframes to_cart {
