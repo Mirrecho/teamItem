@@ -2,7 +2,9 @@
   <view class="banner">
     <image src="/imgs/details1_1.jpg"></image>
   </view>
-
+  <view class="list-box">
+  
+  </view>
 
 
 
