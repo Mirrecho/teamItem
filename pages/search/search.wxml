@@ -18,6 +18,25 @@
                 </navigator>
             </view>
         </view>
+		<view class="result-null" wx:else>
+            <view class="null-tips">Oh~~ 搜索结果为空！</view>
+            <view class="recommend-title">
+                <text>相关推荐</text>
+            </view>
+            <view class="recommend-box">
+                <view class="result-list" wx:for="{{result}}" wx:key="index">
+                    <navigator url="{{item.url}}">
+                        <image src="{{item.thumb}}"></image>
+                        <view class="result-text">
+                            <text>{{item.title}}</text>
+                        </view>
+                        <view class="result-text">
+                            <text>￥ {{item.price}}</text>
+                        </view>
+                    </navigator>
+                </view>
+            </view>
+        </view>
 	
 	
 	
