@@ -1,5 +1,7 @@
 <view class="main">
-
+  <view class="banner">
+    <image src="/imgs/details1_1.jpg"></image>
+  </view>
 
 
 
