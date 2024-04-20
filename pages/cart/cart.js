@@ -52,3 +52,48 @@ Page({
       }
     },
   
+    
+  /**
+   * 购物车全选事件
+   */
+  selectAll(e) {
+    let selectAllStatus = this.data.selectAllStatus;
+    selectAllStatus = !selectAllStatus;
+    let carts = this.data.carts;
+
+    for (let i = 0; i < carts.length; i++) {
+      carts[i].selected = selectAllStatus;
+    }
+    this.setData({
+      selectAllStatus: selectAllStatus,
+      carts: carts
+    });
+    this.getTotalPrice();
+  },
+
+  /**
+   * 绑定加数量事件
+   */
+  addCount(e) {
+    const index = e.currentTarget.dataset.index;
+    let carts = this.data.carts;
+    let num = carts[index].num;
+    num = num + 1;
+    carts[index].num = num;
+    this.setData({
+      carts: carts
+    });
+    this.getTotalPrice();
+  },
+
+  /**
+   * 绑定减数量事件
+   */
+  minusCount(e) {
+    const index = e.currentTarget.dataset.index;
+    const obj = e.currentTarget.dataset.obj;
+    let carts = this.data.carts;
+    let num = carts[index].num;
+    if(num <= 1){
+      return false;
+    }
