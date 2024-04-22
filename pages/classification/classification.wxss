@@ -9,6 +9,7 @@ page,
   float: left;
   width: 150rpx;
   height: 100%;
+  /* border-right 属性用于设置元素右侧边框的样式。    solid 表示边框是实线， */
   border-right: 1px solid #ddd;
   box-sizing: border-box;
 }
