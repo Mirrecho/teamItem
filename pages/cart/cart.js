@@ -2,7 +2,7 @@
 Page({
     data: {
       carts:[],         
-      hasList:false,       
+      hasList:false,
       totalPrice:0,           
       selectAllStatus:true,   
       obj:{
@@ -109,14 +109,14 @@ Page({
    * 计算总价
    */
   getTotalPrice() {
-    let carts = this.data.carts;                  // 获取购物车列表
+    let carts = this.data.carts; 
     let total = 0;
-    for(let i = 0; i<carts.length; i++) {         // 循环列表得到每个数据
-      if(carts[i].selected) {                     // 判断选中才会计算价格
-        total += carts[i].num * carts[i].price;   // 所有价格加起来
+    for(let i = 0; i<carts.length; i++) { 
+      if(carts[i].selected) {  
+        total += carts[i].num * carts[i].price; 
       }
     }
-    this.setData({                                // 最后赋值到data中渲染到页面
+    this.setData({
       carts: carts,
       totalPrice: total.toFixed(2)
     });
