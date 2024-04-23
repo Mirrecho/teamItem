@@ -1,47 +1,11 @@
 <view class="main">
   <view class="categroy-left">
-<!--.<view wx:for="{{category}}wx:key="index">:这是一个循环指令，用于遍历 category数组。wx:for 是微信小程序中的一个指令，它类似于其他编程语言中的 for 循环。-->
-
-<!--wx:key="index"是一个唯一键值，用于帮助小程序识别列表中每个项目的变更、新增或删除。-->
-
-<!-- data-id="{{item.id}}":这是一个自定义数据属性，它将每个分类项的 id 绑定到 data-id 属性上。-->
-
-<!--data-index="{{index}}": 同样是一个自定义数据属性，它将当前遍历的索引值绑定到data-index属性上。-->
-
-<!--bindtap="switchTab": 这是一个事件绑定指令，当用户点击这个<view>组件时，会触发switchTab 事件处理函数。在微信小程序中，bindtap 是绑定点击事件的指令。-->
-
-<!--class="cate-list {{curIndex===index?'on:"}}":这里使用了三元运算符来动态设置类名。如果当前的 curlndex(可能代表当前选中的分类索引)与当前遍历的 index 相等，则会添加 on 类，否则不添加。这通常用于在视觉上区分当前选中的分类项。-->
-
-<!--{{item.name}}:这是对当前分类项的 name 属性的插值表达式，它会显示每个分类的名称。-->
     <view wx:for="{{category}}" wx:key="index" data-id="{{item.id}}" data-index="{{index}}" 
     bindtap="switchTab" class="cate-list {{curIndex === index?'on':''}}">{{item.name}}</view>
   </view>
-  <!--<scroll-view
-class="categroy-right">class 属性用于指定这个<scroll-view>组件的样式类，这里的样式类名称是categroy-right，它应该在小程序的CSS文件中定义。-->
-
-<!--scroll-y="{{isScroll}}": 这个属性用于控制是否允许垂直方向的滚动。{{isScroll}} 是一个数据绑定表达式，它的值来源于页面的 data 对象中的 isScroll属性。如果isScroll 的值为true，则允许垂直滚动，如果为 false，则禁止。-->
-
-<!--scroll-into-view="{{toView}}"这个属性用于指定滚动时应该滚动到哪个元素的视图内。{{toView}}是一个数据绑定表达式，它的值应该是一个字符串，代表要滚动到的元素的ID.-->
-
-<!--scroll-with-animation="true'这个属性用于控制滚动是否应该以动画形式进行。当设置为true 时，滚动将以动画的形式平滑进行。-->
 
   <scroll-view class="categroy-right" scroll-y="{{isScroll}}" scroll-into-view="{{toView}}" scroll-with-animation="true">
 
-  <!--
-    1. <block wx:for="{{detail}}" wx:for-index="idx" wx:key="idx">`: 这里使用了 `<block>` 组件来作为一个容器，`wx:for="{{detail}}"` 遍历 `detail` 数组，`wx:for-index="idx"` 为当前遍历的索引赋值到变量 `idx` 中，`wx:key="idx"` 提供了每个元素的唯一键值。
-2. `<view id="{{item.id}}" class="cate-box">`: 创建一个视图容器，并使用 `id` 属性设置为当前遍历项的 `id`，同时赋予一个类名 `cate-box`。
-
-3. `<view class="cate-banner">` 和 `<image src="{{item.banner}}"></image>`: 创建一个包含图片的视图，图片的来源是当前遍历项的 `banner` 属性。
-
-4. `<view class="cate-title">` 和 `<text>{{item.cate}}</text>`: 创建一个显示分类标题的视图，标题文本是当前遍历项的 `cate` 属性。
-
-5. `<view class="product">`: 创建一个用于包含产品列表的视图容器。
-
-6. `<view class="product-list" wx:for="{{item.detail}}" wx:key="index" wx:for-item="val">`: 又一个嵌套的循环，这次是遍历当前项的 `detail` 数组，并为数组中的每个对象创建一个产品列表项。
-
-7. `<navigator url="../list/list">`: 这是一个微信小程序的导航组件，用于跳转到指定的页面。这里的 `url` 属性指定了目标页面的路径。
-
-8. `<image src="{{val.thumb}}"></image>` 和 `<view class="classname"><text>{{val.name}}</text></view>`: 在每个产品列表项中，显示产品的缩略图和名称。缩略图的来源是 `val.thumb`，产品名称是 `val.name`。-->
     <block wx:for="{{detail}}" wx:for-index wx:key="idx">
       <view id="{{item.id}}" class="cate-box">
         <view class="cate-banner">
